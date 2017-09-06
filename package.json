@@ -1,0 +1,25 @@
+{
+  "name": "greet",
+  "version": "0.1.0",
+  "description": "",
+  "cordova": {
+    "id": "greet-plug-in",
+    "platforms": [
+      "android",
+      "browser"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-browser"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.4.0"
+    }
+  ],
+  "author": "",
+  "license": "ISC"
+}
