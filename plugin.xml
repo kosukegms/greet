@@ -17,6 +17,20 @@
         <source-file src="src/android/plugins/hello/world/Greet.java" target-dir="src/plugins/hello/world/"/>
     </platform>
 
+
+    <platform name="ios">
+
+        <config-file target="config.xml" parent="/*">
+            <feature name="Greet">
+                <param name="ios-package" value="Greet" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/Greet.h" />
+        <source-file src="src/ios/Greet.m" />
+
+    </platform>
+
     <platform name="browser">
 
         <config-file target="config.xml" parent="/*">
