@@ -1,5 +1,8 @@
-var exec = require('cordova/exec');
-
-exports.greet = function(message, success, error) {
-    exec(success, error, "Hello", "greet", [message]);
+// var exec = require('cordova/exec');
+module.exports = {
+  sayHi: function(message, success, error) {
+    console.log("in wwww");
+    console.log(success);
+      cordova.exec(success, error, "Greet", "sayHi", [message]);
+  }
 };

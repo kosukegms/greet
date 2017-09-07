@@ -5,16 +5,16 @@
         <engine name="cordova" version=">=3.4.0"/>
         </engines>
     <js-module name="greet" src="www/greet.js">
-        <clobbers target="cordova.plugins.greet" />
+        <clobbers target="plugins.greet" />
     </js-module>
 
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Greet">
-                <param name="android-package" value="com.example.plugin.Greet"/>
+                <param name="android-package" value="plugins.hello.world.Greet"/>
             </feature>
         </config-file>
-        <source-file src="src/android/greet.js" target-dir="src/com/example/plugin/"/>
+        <source-file src="src/android/plugins/hello/world/Greet.java" target-dir="src/plugins/hello/world/"/>
     </platform>
 
     <platform name="browser">
